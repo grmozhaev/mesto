@@ -1,0 +1,8 @@
+.popup__image-content {
+  display: none;
+  position: relative;
+}
+
+.popup__image-content.popup__content_is-opened {
+  display: block;
+}

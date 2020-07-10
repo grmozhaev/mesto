@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
   </head>
 
   <body>
     <div class="root">
       <header class="header root__section">
-        <img src="./images/logo.svg" alt="mesto logo" class="logo" />
+        <img
+          src="<%=require('./images/logo.svg').default%>"
+          alt="mesto logo"
+          class="logo"
+        />
       </header>
       <div class="profile root__section">
         <div class="user-info">
@@ -28,14 +32,14 @@
       <div class="spinner">
         <img
           class="spinner__image"
-          src="images/Spinner-1s-200px.svg"
+          src="<%=require('./images/Spinner-1s-200px.svg').default%>"
           alt="Идёт загрузка..."
         />
       </div>
       <div class="popup">
         <div class="popup__content" id="popup-new">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg').default%>"
             alt=""
             class="popup__close"
             id="close-new"
@@ -70,7 +74,7 @@
         </div>
         <div class="popup__content" id="popup-bio">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg').default%>"
             alt=""
             class="popup__close"
             id="close-bio"
@@ -106,7 +110,7 @@
         </div>
         <div class="popup__image-content">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg').default%>"
             alt=""
             class="popup__close"
             id="close-image"
@@ -115,9 +119,9 @@
         </div>
       </div>
     </div>
-    <script src="CardList.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+    <!-- <script src="CardList.js"></script>
     <script src="Card.js"></script>
-    <!-- <script src="InitialCards.js"></script> -->
     <script src="FormValidator.js"></script>
     <script src="Popup.js"></script>
     <script src="ImagePopup.js"></script>
@@ -125,6 +129,6 @@
     <script src="FormNewCard.js"></script>
     <script src="UserInfo.js"></script>
     <script src="Api.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js"></script> -->
   </body>
 </html>

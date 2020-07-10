@@ -1,4 +1,4 @@
-class FormNewCard {
+export default class FormNewCard {
   constructor(
     trigger,
     content,

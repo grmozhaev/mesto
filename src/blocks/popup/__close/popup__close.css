@@ -1,5 +1,4 @@
-.popup__close,
-.popup__close-image {
+.popup__close {
   width: 26px;
   position: absolute;
   top: -26px;

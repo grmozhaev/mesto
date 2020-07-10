@@ -1,4 +1,13 @@
-"use strict";
+import "./pages/index.css";
+import Api from "./Api";
+import Card from "./Card";
+import CardList from "./CardList";
+import Popup from "./Popup";
+import ImagePopup from "./ImagePopup";
+import UserInfo from "./UserInfo";
+import FormValidator from "./FormValidator";
+import FormBio from "./FormBio";
+import FormNewCard from "./FormNewCard";
 
 (async function () {
   const showNewCardPopUpButton = document.querySelector(".user-info__button");

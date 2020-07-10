@@ -1,4 +1,4 @@
-class FormBio {
+export default class FormBio {
   constructor(
     trigger,
     content,

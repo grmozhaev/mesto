@@ -23,7 +23,7 @@ import FormNewCard from "./FormNewCard";
   const userAvatar = document.querySelector(".user-info__photo");
   const biggerImage = document.querySelector(".popup__image-link");
 
-  const isDev = process.env.NODE_ENV === "development";
+  const isDev = NODE_ENV === "development";
 
   const cohortId = "cohort11";
   const token = "caffd67b-3792-447a-8734-73a9aba7e2ea";

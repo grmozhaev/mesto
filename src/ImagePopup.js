@@ -1,4 +1,4 @@
-class ImagePopup {
+export default class ImagePopup {
   constructor(trigger, closeButton, content, biggerImage, createPopup) {
     this.trigger = trigger;
     this.closeButton = closeButton;

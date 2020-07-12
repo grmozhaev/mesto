@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
   constructor(form) {
     this.form = form;
   }
@@ -36,11 +36,7 @@ class FormValidator {
       input.setCustomValidity(this.errorMessages.wrongLength);
       return false;
     }
-    /** REVIEW: Можно лучше:
-     *
-     * Также можно использовать type="url" и `.validity.typeMismatch`.
-     * Это избавит от необходимости указывать сложное регулярное выражение в аттрибуте pattern у текстового поля.
-     */
+
     if (input.validity.patternMismatch) {
       input.setCustomValidity(this.errorMessages.notUrl);
       return false;

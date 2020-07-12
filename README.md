@@ -8,4 +8,22 @@ JS, CSS, HTML, GIT, NPM, Webpack
 
 ### Run project
 
-Click the 'Mesto project' link above.
+#### Clone project
+
+To clone project to your local machine use 'git clone https://github.com/grmozhaev/mesto.git' command
+
+#### Install dependencies
+
+Call 'npm install' in the console
+
+#### Development build
+
+npm run dev
+
+#### Production build
+
+npm run build
+
+#### Publish project on GitHub-pages
+
+npm run deploy
